@@ -1,9 +1,7 @@
 # 🚀 AWS Infrastructure using Terraform
 
 ## 📌 Project Overview
-This project provisions a scalable AWS infrastructure using 
-Terraform with a modular approach. It includes networking, 
-compute, storage, database, and monitoring components.
+This project provisions a scalable AWS infrastructure using Terraform with a modular approach. It includes networking, compute, storage, database, and monitoring components.
 
 ## 🏗️ Architecture
 - VPC with public, private, and database subnets
@@ -29,6 +27,7 @@ compute, storage, database, and monitoring components.
 - CloudWatch
 
 ## 📁 Project Structure
+```text
 TERRAFORM-PROJECT/
 ├── provider.tf
 ├── versions.tf
@@ -45,7 +44,8 @@ TERRAFORM-PROJECT/
     ├── rds/
     ├── s3/
     ├── monitoring/
-    └── ec2/
+    └── ec2/ (optional)
+```
 
 ## ⚙️ Features
 - Modular Terraform code
@@ -56,10 +56,12 @@ TERRAFORM-PROJECT/
 - Monitoring using SNS & CloudWatch
 
 ## 🚀 How to Deploy
-- terraform init
-- terraform validate
-- terraform plan 
-- terraform apply 
+```bash
+terraform init
+terraform validate
+terraform plan
+terraform apply
+```
 
 ## ⚠️ Important Notes
 - Use correct AMI for your region
@@ -67,8 +69,10 @@ TERRAFORM-PROJECT/
 - Change S3 bucket name if already exists
 - Do not commit passwords
 
-## cleanup 
-- terraform destroy
+## 🧹 Cleanup
+```bash
+terraform destroy
+```
 
 ## 👨‍💻 Author
 Harish  
