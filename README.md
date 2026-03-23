@@ -14,6 +14,7 @@ This project provisions a scalable AWS infrastructure using Terraform with a mod
 - S3 bucket
 - IAM role and instance profile
 - SNS + CloudWatch alerts
+- EKS cluster with node group
 
 ## 🧰 AWS Services Used
 - VPC
@@ -25,6 +26,7 @@ This project provisions a scalable AWS infrastructure using Terraform with a mod
 - IAM
 - SNS
 - CloudWatch
+- Amazon EKS (Kubernetes)
 
 ## 📁 Project Structure
 ```text
@@ -44,7 +46,8 @@ TERRAFORM-PROJECT/
     ├── rds/
     ├── s3/
     ├── monitoring/
-    └── ec2/ (optional)
+    ├── eks/
+    └── ec2/
 ```
 
 ## ⚙️ Features
